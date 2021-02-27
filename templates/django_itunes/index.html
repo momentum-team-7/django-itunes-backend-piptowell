@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+  <script src="{% static 'Javascript/main.js' %}" async></script>
+  <title>Music Search</title>
+</head>
+<body>
+  <header>Check It Out!    w/ the preview player</header>
+  <div class="header-two">Listen to 29 seconds of your favorite songs. Not 30 seconds. Just 29 seconds.</div>
+<div class="player-search">
+  
+  <form id="search-form">
+    <button id="search-button" 
+    type="submit">Search</button>
+    <input class="search-bar" type="text" 
+    placeholder="Whatcha wanna hear?" required>
+    <div id="player">
+      <audio class="audio-player" controls autoplay></audio>
+    </div>
+  </div>
+    
+
+  </form>
+  
+
+  <div class="search-results">
+    <!-- <ul id="result-list"></ul> -->
+  </div>
+
+
+
+</body>
+</html>
